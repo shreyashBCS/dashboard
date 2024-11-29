@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Image } from 'react-bootstrap';
 
+import './styles.css'
 const Dashboard = () => {
     return (
         <Container fluid className="p-4">
@@ -11,60 +12,69 @@ const Dashboard = () => {
                         <h4>Home</h4>
                         <div>
                             <Button variant="primary" className="me-3">Upgrade Plan</Button>
-                            <span className="me-3">Shopgrocerynow</span>
+                            <span className="me-3"><Image src='/src/assets/Profile-Avatar-PNG-Free-Download.webp' style={{ width: '30px', height: 'auto' }} />   Shopgrocerynow</span>
                             <i className="bi bi-bell"></i>
                         </div>
                     </div>
                 </Col>
             </Row>
-
+            {/* ---------------------------------------------------------------------------------------------------------------------------- */}
             {/* Info Cards */}
-            <Row className="mb-3 justify-content-evenly">
-                <Col md={2}>
-                    <Card>
+            <div className='border border-primary p-3 mb-3'>
+                <Row className="mb-3 justify-content-evenly">
+                    <Col md={2} className="border-end">
+                        {/* <Card> */}
                         <Card.Body>
                             <Card.Title>Phone Number</Card.Title>
                             <Card.Text>+91 **********</Card.Text>
                         </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={2}>
-                    <Card>
+                        {/* </Card> */}
+                    </Col>
+
+                    <Col md={2} className="border-end">
+                        {/* <Card> */}
                         <Card.Body>
                             <Card.Title>Display Name</Card.Title>
                             <Card.Text>Shopgrocerynow</Card.Text>
                         </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={2}>
-                    <Card>
+                        {/* </Card> */}
+                    </Col>
+
+                    <Col md={2} className="border-end">
+                        {/* <Card> */}
                         <Card.Body>
                             <Card.Title>Messaging Limit</Card.Title>
                             <Card.Text>250/24hr</Card.Text>
                         </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={2}>
-                    <Card>
+                        {/* </Card> */}
+                    </Col>
+
+                    <Col md={2} className="border-end">
+                        {/* <Card> */}
                         <Card.Body>
                             <Card.Title>Quality Rating</Card.Title>
                             <Card.Text className="text-success">High</Card.Text>
                         </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={2}>
-                    <Card>
+                        {/* </Card> */}
+                    </Col>
+
+
+                    <Col md={2} >
+                        {/* <Card> */}
                         <Card.Body>
                             <Card.Title>Phone Number Status</Card.Title>
                             <Card.Text>Connected</Card.Text>
                         </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
+                        {/* </Card> */}
+                    </Col>
 
+
+                </Row>
+            </div>
+            {/* ------------------------------------------------------------------------------------------------------------------------------------- */}
             {/* Dashboard Sections */}
             <Row className="mb-4">
-                <Col md={6} style={{width:"50"}}>
+                <Col md={6} style={{ width: "50" }}>
                     <Card>
                         <Card.Body>
                             <Card.Title>Conversations</Card.Title>
@@ -111,9 +121,9 @@ const Dashboard = () => {
                 <Col md={6}>
                     <Card className='w-26'>
                         <Card.Body>
-                            <Card.Title>Contacts</Card.Title>
-                            <p>Name: Test User</p>
-                            <p>Number: +91 **********</p>
+                            <Card.Title className='mb-3'>Contacts      1       </Card.Title>
+                            <p className='mb-2'>Name: Number</p>
+                            <p className='mb-2'>Test User : +91 **********</p>
                         </Card.Body>
                     </Card>
                 </Col>

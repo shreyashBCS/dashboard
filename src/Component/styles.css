@@ -1,0 +1,6 @@
+.vertical-divider {
+    width: 1px; /* Reduced width of the vertical line */
+    background-color: #ccc; /* Color of the line */
+    height: auto; /* Adjust height based on content */
+    margin: 0 15px; /* Space around the divider */
+}
